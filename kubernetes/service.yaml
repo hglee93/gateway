@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: match
+  name: gateway
   labels:
-    app: match
+    app: gateway
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: match
+    app: gateway
